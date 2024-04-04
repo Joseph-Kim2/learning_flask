@@ -1,12 +1,12 @@
 # test2 project, app.py
 # Mike Colbert 09/20/2019
 
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 @app.route('/')
 def index():
-    return "Hello World"
+    return render_template("index.html")
 
 @app.route("/pair")
 def pair():

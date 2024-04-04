@@ -8,14 +8,14 @@ app = Flask(__name__)
 def index():
     return "Hello World"
 
-@app.route("/flask")
-def hello():
+@app.route("/pair")
+def pair():
     n1 = 10
     n2 = 20
     sum = n1 + n2
     return str(sum)
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0')
+    app.run(debug=True, port=8000)
 
 

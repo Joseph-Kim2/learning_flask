@@ -8,9 +8,9 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route("/about")
+@app.route("/predict")
 def about():
-    return about.html
+    return predict.html
 
 if __name__ == '__main__':
     app.run(debug=True, port=8000)
